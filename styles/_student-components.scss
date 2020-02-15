@@ -1,0 +1,132 @@
+@mixin student-buttonlarge($color, $radius) {
+  text-align: center;
+  color: rgb(253, 253, 253);
+  font-size: 22px;
+  border: solid 1px darken($color, 2%);
+  background: $color;
+  border-radius: $radius;
+  padding: 13px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 600;
+  text-shadow: -0.5px 1.5px #0561ac5b, 0 1.5px #0561ac44;
+  font-style: normal;
+
+  &:hover {
+    border-style: solid;
+    border-color: $color;
+    background: none;
+    text-shadow: none;
+    color: darken($color, 6%);
+  }
+
+  & .student-buttonlarge-caption {
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: none;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  &:hover .student-buttonlarge-caption {
+    font-size: 15px;
+    color: darken($color, 10%);
+  }
+}
+
+
+@mixin student-linkcontainer($color, $radius) {
+  margin: 20px;
+  height: 215px;
+  border-radius: $radius;
+  position: relative;
+  overflow: hidden;
+
+  & .student-linkcontainer-header {
+    height: 75px;
+    border: solid 1px $color;
+    background: $color;
+    border-bottom: none;
+    border-radius: $radius $radius 0px 0px;
+    padding: 25px;
+    position: relative;
+    color: White;
+    box-shadow: 1px 1px 4px 1px rgb(228, 228, 228);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+  }
+
+  & .student-linkcontainer-header-l {
+    text-align: left;
+    font-size: 19px;
+  }
+
+  & .student-linkcontainer-header-r {
+    text-align: right;
+    font-size: 19px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+
+  & .student-linkcontainer-footer {
+    height: 140px;
+    border: solid 1px #e0e0e0;
+    border-top: none;
+    border-radius: 0px 0px $radius $radius;
+    padding: 23px;
+    position: relative;
+    color: rgb(48, 48, 48);
+  }
+
+  &:hover .student-linkcontainer-header {
+    color: $color;
+    background-color: White;
+    border-bottom: solid 1px $color;
+  }
+
+  &:hover .student-linkcontainer-header-r {
+    color: $color;
+  }
+
+  &.student-linkcontainer-img {
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    -webkit-filter: brightness(50%) blur(1px);
+    filter: brightness(100%) blur(1px);
+    height: 0px;
+  }
+}
+
+.student-buttonlarge-train {
+  @include student-buttonlarge(hsl(137, 99%, 32%), 15px);
+}
+
+.student-linkcontainer-topic {
+  @include student-linkcontainer(rgb(0, 163, 233), 15px);
+}
+
+.student-component-divider-title {
+  text-align: center;
+  padding: 30px;
+  color: rgb(184, 184, 184);
+  font-weight: 650;
+}
+
+.student-sidequote {
+  text-align: center;
+  color: rgb(65, 65, 65);
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.student-sidequote-sub {
+  color: rgb(170, 170, 170);
+  font-weight: 100;
+  font-style: italic;
+}
