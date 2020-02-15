@@ -16,6 +16,10 @@ a:hover {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 .student-navheader {
   position: fixed;
   width: 100vw;
@@ -79,6 +83,7 @@ a:hover {
   position: absolute;
   margin-top: 78px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .student-infobanner img {
@@ -91,24 +96,33 @@ a:hover {
           filter: blur(5px);
 }
 
-.student-infobanner-left {
+.student-infobanner-center {
   text-align: center;
   padding-top: 27px;
 }
 
-.student-infobanner-left-name {
+.student-infobanner-center-name {
   color: #ffffff;
   font-size: 27px;
 }
 
-.student-infobanner-left-level {
-  color: #cfcfcf;
+.student-infobanner-left {
+  padding-top: 27px;
+}
+
+.student-infobanner-left a {
+  color: #d8d8d8;
   font-size: 22px;
+}
+
+.student-infobanner-center-grade {
+  color: #d8d8d8;
+  font-size: 23px;
   font-style: italic;
 }
 
 .student-infobanner-right {
-  text-align: center;
+  text-align: left;
   padding-top: 28px;
 }
 
@@ -116,6 +130,10 @@ a:hover {
   color: #f1f1f1;
   font-size: 22px;
   font-weight: 500;
+}
+
+.student-infobanner-right-progress {
+  color: lightgray;
 }
 
 .student-infobanner-right-stat-mp {
@@ -258,8 +276,52 @@ a:hover {
 .viewport {
   position: absolute;
   width: 100vw;
+  height: 100vh;
   padding: 0px;
   margin: 0px;
-  margin-top: 168px;
+  z-index: 0;
+  padding-top: 168px;
+}
+
+.student-quiz-arithmeticproblem-info {
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.student-quiz-arithmeticproblem-problem {
+  color: #0097ee;
+  text-align: center;
+  font-weight: 600;
+}
+
+.student-quiz-problemcontainer {
+  margin-top: 30px;
+  border: #d4d4d4 1.5px solid;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.student-quiz-problem-standard {
+  text-align: left;
+  color: grey;
+  font-size: 11px;
+}
+
+.student-quiz-problem-id {
+  color: #535353;
+  font-size: 11px;
+}
+
+.student-quiz-arithmeticproblem-answer {
+  text-align: center;
+  margin: 25px;
+}
+
+.student-quiz-inputbox {
+  border: 2.33px #e6e6e6 solid;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

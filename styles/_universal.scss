@@ -17,4 +17,8 @@ a:hover {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 .bootstrap-container {}

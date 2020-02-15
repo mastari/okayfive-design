@@ -1,0 +1,44 @@
+.student-quiz-arithmeticproblem-info {
+  color: rgb(29, 29, 29);
+  text-align: center;
+}
+
+.student-quiz-arithmeticproblem-problem {
+  color: rgb(0, 151, 238);
+  text-align: center;
+  font-weight: 600;
+}
+
+.student-quiz-arithmeticproblem-container {}
+
+.student-quiz-problemcontainer {
+  margin-top: 30px;
+  border: rgb(212, 212, 212) 1.5px solid;
+  border-radius: 18px;
+  padding: 30px;
+
+}
+
+.student-quiz-problem-standard {
+  text-align: left;
+  color: grey;
+  font-size: 11px;
+}
+
+.student-quiz-problem-id {
+  color: rgb(83, 83, 83);
+  font-size: 11px;
+}
+
+.student-quiz-arithmeticproblem-answer {
+  text-align: center;
+  margin: 25px;
+}
+
+.student-quiz-inputbox {
+  border: 2.33px rgb(230, 230, 230) solid;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}

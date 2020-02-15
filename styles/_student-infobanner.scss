@@ -12,6 +12,7 @@ $student-infobanner-height: 90px;
   position: absolute;
   margin-top: $student-navheader-height;
   overflow: hidden;
+  z-index: 1;
 
   & img {
     position: absolute;
@@ -23,24 +24,33 @@ $student-infobanner-height: 90px;
   }
 }
 
-.student-infobanner-left {
+.student-infobanner-center {
   text-align: center;
   padding-top: ($student-infobanner-height/3)-3px;
 }
 
-.student-infobanner-left-name {
+.student-infobanner-center-name {
   color: #ffffff;
   font-size: 27px;
 }
 
-.student-infobanner-left-level {
-  color: rgb(207, 207, 207);
+.student-infobanner-left {
+  padding-top: 27px;
+}
+
+.student-infobanner-left a {
+  color: rgb(216, 216, 216);
   font-size: 22px;
+}
+
+.student-infobanner-center-grade {
+  color: rgb(216, 216, 216);
+  font-size: 23px;
   font-style: italic;
 }
 
 .student-infobanner-right {
-  text-align: center;
+  text-align: left;
   padding-top: ($student-infobanner-height/3)-2px;
 }
 
@@ -48,6 +58,12 @@ $student-infobanner-height: 90px;
   color: rgb(241, 241, 241);
   font-size: 22px;
   font-weight: 500;
+}
+
+.student-infobanner-right-progress {
+  color: rgb(211,
+      211,
+      211)
 }
 
 .student-infobanner-right-stat-mp {
