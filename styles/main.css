@@ -324,4 +324,37 @@ input:focus {
   text-align: center;
   border-radius: 10px;
 }
+
+.student-quiz-understandcontainer {
+  margin-top: 30px;
+  border: #d4d4d4 1.5px solid;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.student-quiz-understand-title {
+  color: #222222;
+  text-align: center;
+}
+
+.student-quiz-understand-subtitle {
+  color: #ff9100;
+  text-align: center;
+}
+
+.student-quiz-padwidget-row {
+  text-align: center;
+}
+
+.student-quiz-padwidget-key {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #0c76b3;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 14px;
+  margin: 5px;
+  color: #0c76b3;
+}
 /*# sourceMappingURL=main.css.map */
