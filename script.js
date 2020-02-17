@@ -8,13 +8,14 @@ class Problem {
 var processbase = {
   "third.multiply.simple.twovar": {
     1: "First, we look at our two numbers ``..a..`` and ``..b..``.",
-    2: "Then, we have ``..a/b..``."
+    2: "Then, we have ``..a..`` ÷ ``..b..``.",
+    3: "Who knew I loved step 3!"
   }
 };
 
 let exampleproblem = new Problem("third.multiply.simple.twovar", {
-  a: 3,
-  b: 7
+  a: Math.round(Math.random() * 10),
+  b: Math.round(Math.random() * 10)
 });
 
 function parseSolveObject(problem) {
@@ -46,8 +47,9 @@ function makeDisplayArray(problem) {
         text = text.substring(0, text.length - 2);
         if (text.length == 1) {
           //isASingleVariable
+          var varReplace = problem.vars[text] //put actual number in place for single letter var
           tempPart.push({
-            string: text,
+            string: varReplace,
             type: "var-" + text.toUpperCase()
           });
         } else {
