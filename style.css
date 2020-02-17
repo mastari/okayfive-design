@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 28px;
+}
+
+.var-A {
+  color: red;
+  font-weight: 700;
+}
+
+.var-B {
+  color: rgb(0, 119, 255);
+  font-weight: 700;
+}
+
+.multiTODO {
+  color: green;
+}
