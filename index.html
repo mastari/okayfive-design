@@ -80,10 +80,12 @@
             Multiply
           </h3>
           <h2 class="student-quiz-arithmeticproblem-problem">
-            7 <span style="color:rgb(73, 73, 73)">x</span> 8
+            <span id="var1">7</span>
+            <span style="color:rgb(73, 73, 73)">x</span>
+            <span id="var2">8</span>
           </h2>
           <div class="student-quiz-arithmeticproblem-answer">
-            <form action="#submitanswer">
+            <form action="">
               <input
                 class="student-quiz-inputbox"
                 type="text"
@@ -108,7 +110,7 @@
                 <a href="#9"><div class="student-quiz-padwidget-key">9</div></a>
               </div>
             </div>
-            <div id="jj">
+            <div class="student-quiz-explanationcontainer">
               <!--Problem Explanation-->
             </div>
           </div>
@@ -117,13 +119,15 @@
       <br />
       <hr />
       <div class="container student-quiz-understandcontainer">
-        <h4 class="student-quiz-understanding-title">Multiplying 5 and 3,</h4>
+        <h4 class="student-quiz-understanding-title">Goal,</h4>
         <div>
           For this evaluation engine, we need to develop an api that create an
           object based step by step array, in which it can take in the
           parameters of the problem and analyze the general cases, the special
           cases, and everything in between to give the student understanding
-          that 0 x 5 or 1 x 5 is easier than 5 x 5 for an inherent reason.
+          that 0 x 5 or 1 x 5 is easier than 5 x 5 for an inherent reason. And
+          no matter the problem, we should be able to provide step-by-step
+          solutions through this evaluation engine.
         </div>
       </div>
     </div>
