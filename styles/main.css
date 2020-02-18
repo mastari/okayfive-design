@@ -359,12 +359,12 @@ input:focus {
 }
 
 .var-A {
-  color: #0fa532;
+  color: #0bbae6;
   font-weight: 700;
 }
 
 .var-B {
-  color: #c40eb5;
+  color: #e402d8;
   font-weight: 700;
 }
 
@@ -375,5 +375,7 @@ input:focus {
 .student-quiz-explanationcontainer {
   text-align: left;
   font-size: 20px;
+  border-left: 1px solid #dadada;
+  padding-left: 50px;
 }
 /*# sourceMappingURL=main.css.map */
