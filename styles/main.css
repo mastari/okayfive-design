@@ -357,23 +357,4 @@ input:focus {
   margin: 6px;
   color: #777777;
 }
-
-.var-A {
-  color: #0fa532;
-  font-weight: 700;
-}
-
-.var-B {
-  color: #c40eb5;
-  font-weight: 700;
-}
-
-.multiTODO {
-  color: green;
-}
-
-.student-quiz-explanationcontainer {
-  text-align: left;
-  font-size: 20px;
-}
 /*# sourceMappingURL=main.css.map */
