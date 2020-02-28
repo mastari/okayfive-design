@@ -22,13 +22,13 @@ var processbase = {
     1: "First, we look at our two numbers ``..a`` and ``..b``.",
     2: "Then, we have ``..a`` ÷ ``..b``.",
     3: "Who knew I loved step 3!",
-    4: "GOLBDY GOOK BOOK ``..b``"
+    4: " ``..b``"
   },
   "another.example.for.you": {
     1: "``..a`` and ``..b``, what great numbers aren't they?",
     2: "I honestly can't choose between ``..a`` and ``..b``.",
     3: "Who knew I loved step 3!",
-    4: "GOLBDY GOOK BOOK ``..b``"
+    4: "Variables are successfully parsed ``..b``!"
   }
 };
 
